@@ -1,0 +1,135 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'react-toastify/dist/ReactToastify.css';
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .concrete-texture {
+    position: relative;
+  }
+  
+  .concrete-texture::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='7' cy='7' r='1'/%3E%3Ccircle cx='27' cy='7' r='1'/%3E%3Ccircle cx='47' cy='7' r='1'/%3E%3Ccircle cx='17' cy='17' r='1'/%3E%3Ccircle cx='37' cy='17' r='1'/%3E%3Ccircle cx='7' cy='27' r='1'/%3E%3Ccircle cx='27' cy='27' r='1'/%3E%3Ccircle cx='47' cy='27' r='1'/%3E%3Ccircle cx='17' cy='37' r='1'/%3E%3Ccircle cx='37' cy='37' r='1'/%3E%3Ccircle cx='7' cy='47' r='1'/%3E%3Ccircle cx='27' cy='47' r='1'/%3E%3Ccircle cx='47' cy='47' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .concrete-texture > * {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+/* Brutalist scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3A3A3A;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4A4A4A;
+}
+
+/* Remove all border radius globally */
+* {
+  border-radius: 0 !important;
+}
+
+/* Brutal focus states */
+input:focus,
+textarea:focus,
+button:focus {
+  outline: 4px solid #3A3A3A !important;
+  outline-offset: 0px !important;
+}
+
+/* Typography scale based on golden ratio */
+.text-brutal {
+  font-size: 72px;
+  line-height: 0.8;
+  font-weight: 700;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.text-monument {
+  font-size: 48px;
+  line-height: 0.9;
+  font-weight: 600;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* ASCII divider utility */
+.ascii-divider::before {
+  content: "████████████████";
+  display: block;
+  font-family: monospace;
+  color: #3A3A3A;
+  font-size: 8px;
+  line-height: 1;
+  letter-spacing: 0;
+  word-spacing: 0;
+}
+
+/* Task completion animation */
+.task-completed {
+  position: relative;
+}
+
+.task-completed::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #FF0000;
+  transform: translateY(-50%);
+  animation: strikethrough 0.3s ease-out forwards;
+}
+
+@keyframes strikethrough {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Concrete drop shadows */
+.shadow-concrete {
+  box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+.shadow-concrete-inset {
+  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Brutal hover states - instant, no transitions */
+.hover-lift:hover {
+  transform: translateY(-4px);
+  transition: none;
+}
+
+.hover-press:active {
+  transform: translateY(4px);
+  transition: none;
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1",
+    "title": "Complete quarterly financial analysis report",
+    "description": "Analyze Q4 performance metrics and prepare comprehensive report for board presentation including revenue trends, cost analysis, and growth projections.",
+    "priority": "high",
+    "status": "pending",
+    "column": "today",
+    "dueDate": "2024-12-20T17:00:00.000Z",
+    "completedAt": null,
+    "createdAt": "2024-12-15T09:00:00.000Z",
+    "order": 0
+  },
+  {
+    "id": "2",
+    "title": "Review and optimize database schema for user profiles",
+    "description": "Audit current database structure for performance bottlenecks and implement indexing improvements to reduce query response times by 40%.",
+    "priority": "medium",
+    "status": "pending",
+    "column": "today",
+    "dueDate": "2024-12-18T16:00:00.000Z",
+    "completedAt": null,
+    "createdAt": "2024-12-14T14:30:00.000Z",
+    "order": 1
+  },
+  {
+    "id": "3",
+    "title": "Design new user onboarding workflow mockups",
+    "description": "Create high-fidelity wireframes and user journey maps for improved first-time user experience, focusing on reducing drop-off rates in the signup process.",
+    "priority": "medium",
+    "status": "pending",
+    "column": "tomorrow",
+    "dueDate": "2024-12-19T12:00:00.000Z",
+    "completedAt": null,
+    "createdAt": "2024-12-15T11:15:00.000Z",
+    "order": 0
+  },
+  {
+    "id": "4",
+    "title": "Conduct security audit for payment processing system",
+    "description": "Comprehensive penetration testing and vulnerability assessment of payment gateway integration to ensure PCI DSS compliance and data protection.",
+    "priority": "high",
+    "status": "pending",
+    "column": "tomorrow",
+    "dueDate": "2024-12-21T10:00:00.000Z",
+    "completedAt": null,
+    "createdAt": "2024-12-15T08:45:00.000Z",
+    "order": 1
+  },
+  {
+    "id": "5",
+    "title": "Plan and schedule team retrospective meeting",
+    "description": "Organize monthly retrospective session to discuss project outcomes, identify improvement opportunities, and plan strategic initiatives for next quarter.",
+    "priority": "low",
+    "status": "pending",
+    "column": "later",
+    "dueDate": null,
+    "completedAt": null,
+    "createdAt": "2024-12-15T13:20:00.000Z",
+    "order": 0
+  },
+  {
+    "id": "6",
+    "title": "Research emerging AI tools for productivity enhancement",
+    "description": "Evaluate latest artificial intelligence solutions for workflow automation, document processing, and team collaboration to identify integration opportunities.",
+    "priority": "low",
+    "status": "completed",
+    "column": "today",
+    "dueDate": null,
+    "completedAt": "2024-12-15T16:30:00.000Z",
+    "createdAt": "2024-12-13T10:00:00.000Z",
+    "order": 2
+  }
+]
