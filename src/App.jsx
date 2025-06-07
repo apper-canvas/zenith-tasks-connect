@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
 import { motion, AnimatePresence } from 'framer-motion'
-import Home from './pages/Home'
+import HomePage from '@/components/pages/HomePage'
 import NotFound from './pages/NotFound'
 import 'react-toastify/dist/ReactToastify.css'
 
@@ -39,7 +39,7 @@ function App() {
         <Router>
           <div className="relative z-10">
             <Routes>
-              <Route path="/" element={<Home darkMode={darkMode} setDarkMode={setDarkMode} />} />
+<Route path="/" element={<HomePage darkMode={darkMode} setDarkMode={setDarkMode} />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </div>
